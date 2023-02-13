@@ -79,6 +79,7 @@ func (service *CSVServiceImpl) MapCsvResponse(data [][]string) []model.AIProject
 			Modellutvikling:           row[17],
 			Klassifisering:            row[18],
 		})
+
 	}
 	return projects
 }

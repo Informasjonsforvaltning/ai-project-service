@@ -1,0 +1,44 @@
+openapi: 3.0.2
+info:
+  title: AI Project Service
+  description: desc
+  version: '1.0'
+  termsOfService: 'https://fellesdatakatalog.digdir.no/about'
+  contact:
+    name: Digitaliseringsdirektoratet
+    url: 'https://fellesdatakatalog.digdir.no'
+    email: fellesdatakatalog@digdir.no
+  license:
+    name: License of API
+    url: 'http://data.norge.no/nlod/no/2.0'
+externalDocs:
+  description: Dokumentasjon på Informasjonsforvaltning GitHub
+  url: https://informasjonsforvaltning.github.io/
+tags:
+  - name: ai-project-service
+    description: AI Project Service
+servers:
+  - url: 'https://ai-project.fellesdatakatalog.digdir.no'
+paths:
+    /data:
+    get:
+      summary: Read data from CSV file
+      responses:
+        '200':
+          description: Returns the data from the CSV file as a JSON object
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/data'
+                
+components:
+  schemas:
+    Data:
+      type: object
+      properties:
+        id:
+          type: integer
+        name:
+          type: string
+        value:
+          type: string

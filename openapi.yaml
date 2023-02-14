@@ -29,11 +29,11 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/data'
+                $ref: '#/components/schemas/projects'
                 
 components:
   schemas:
-    Data:
+    Projects:
       type: object
       properties:
         id:

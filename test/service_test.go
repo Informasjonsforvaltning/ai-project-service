@@ -63,8 +63,8 @@ func TestMapCsvResponse(t *testing.T) {
 	if projects[0].ID != "1" {
 		t.Errorf("MapCsvResponse did not map the ID correctly. Expected: 1, Actual: %s", projects[0].ID)
 	}
+
 	if projects[1].Prosjekteier != "owner2" {
 		t.Errorf("MapCsvResponse did not map the Prosjekteier correctly. Expected: owner2, Actual: %s", projects[1].Prosjekteier)
 	}
-
 }

@@ -17,19 +17,19 @@ spec:
       labels:
         app: ai-project-service
       annotations:
-        prometheus.io/scrape: "true"
+        prometheus.io/scrape: "false"
     spec:
       containers:
-          - name: ai-project-service
-            image: ai-project-service
-            imagePullPolicy: Always
-            ports:
-              - containerPort: 8080
-            livenessProbe:
-              httpGet:
-                path: /ping
-                port: 8080
-            readinessProbe:
-              httpGet:
-                path: /ready
-                port: 8080
+        - name: ai-project-service
+          image: ai-project-service
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8080
+          livenessProbe:
+            httpGet:
+              path: /ping
+              port: 8080
+          readinessProbe:
+            httpGet:
+              path: /ready
+              port: 8080

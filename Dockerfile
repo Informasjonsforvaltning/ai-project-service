@@ -14,6 +14,7 @@ ENV APP_NAME ai-project-service
 ENV GIN_MODE release
 
 COPY --from=build-env /$APP_NAME .
+COPY *.csv .
 
 EXPOSE 8080
 

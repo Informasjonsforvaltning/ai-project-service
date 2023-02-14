@@ -27,9 +27,9 @@ func InitService() *CSVServiceImpl {
 }
 
 // ReadCSVData reads data from a CSV file and returns the data as a slice of CSVData
-func (service *CSVServiceImpl) ReadCSVData() ([]model.AIProject, error) {
+func (service *CSVServiceImpl) ReadCSVData(filepath string) ([]model.AIProject, error) {
 	// Open the CSV file
-	file, err := os.Open("ai_projects_norwegian_state - Oversatt_v1.csv")
+	file, err := os.Open(filepath)
 	if err != nil {
 		return nil, err
 	}

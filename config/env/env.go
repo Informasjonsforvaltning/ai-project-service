@@ -18,5 +18,5 @@ type Paths struct {
 var PathValues = Paths{
 	Ping:  "/ping",
 	Ready: "/ready",
-	Data:  "/data",
+	Data:  "/projects",
 }

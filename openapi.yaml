@@ -20,7 +20,7 @@ tags:
 servers:
   - url: 'https://ai-project.fellesdatakatalog.digdir.no'
 paths:
-    /data:
+    /projects:
     get:
       summary: Read data from CSV file
       responses:

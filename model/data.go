@@ -7,6 +7,7 @@ type AIProject struct {
 	Departement               string `json:"departement"`
 	Eiertype                  string `json:"eiertype"`
 	Kontaktperson             string `json:"kontaktperson"`
+	Sektor                    string `json:"sektor"`
 	ProsjektBeskrivelse       string `json:"prosjektBeskrivelse"`
 	ProsjektFormål            string `json:"prosjektFormaal"`
 	Prosjektstart             string `json:"prosjektstart"`

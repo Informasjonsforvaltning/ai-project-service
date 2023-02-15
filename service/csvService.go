@@ -59,24 +59,25 @@ func (service *CSVServiceImpl) MapCsvResponse(data [][]string) []model.AIProject
 	var projects []model.AIProject
 	for _, row := range data[1:] {
 		projects = append(projects, model.AIProject{
-			ID:                        row[0],
-			Prosjekteier:              row[1],
-			Prosjekttittel:            row[2],
-			Departement:               row[3],
-			Eiertype:                  row[4],
-			Kontaktperson:             row[5],
-			ProsjektBeskrivelse:       row[6],
-			ProsjektFormål:            row[7],
-			Prosjektstart:             row[8],
-			Prosjektslutt:             row[9],
-			TilknyttedeOrganisasjoner: row[10],
-			InnleideKonsulenter:       row[11],
-			LenkeTilProsjekt:          row[12],
-			Status:                    row[13],
-			TypeData:                  row[14],
-			Datakilde:                 row[15],
-			Modellutvikling:           row[16],
-			Klassifisering:            row[17],
+			ID:             row[0],
+			Prosjekteier:   row[1],
+			Prosjekttittel: row[2],
+			Departement:    row[3],
+			Eiertype:       row[4],
+			Kontaktperson:  row[5],
+			//Sektor:                  row[6], IKKE I BRUK
+			ProsjektBeskrivelse:       row[7],
+			ProsjektFormål:            row[8],
+			Prosjektstart:             row[9],
+			Prosjektslutt:             row[10],
+			TilknyttedeOrganisasjoner: row[11],
+			InnleideKonsulenter:       row[12],
+			LenkeTilProsjekt:          row[13],
+			Status:                    row[14],
+			TypeData:                  row[15],
+			Datakilde:                 row[16],
+			Modellutvikling:           row[17],
+			Klassifisering:            row[18],
 		})
 
 	}

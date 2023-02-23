@@ -9,12 +9,12 @@ on:
 jobs:
   build-and-deploy-production:
     name: Deploy to prod on merge to main branch
-    uses: Informasjonsforvaltning/workflows/.github/workflows/build-deploy.yaml@main
+    uses: Informasjonsforvaltning/workflows/.github/workflows/build-push.yaml@main
     with:
       app_name: ai-project-service
       environment: prod
       cluster: digdir-fdk-prod
-      build_env: True
+      build_env: true
       build_env_name: NAMESPACE
       build_env_value: production
     secrets:
@@ -27,7 +27,7 @@ jobs:
   deploy-to-demo:
     needs: build-and-deploy-production
     name: Deploy to demo if prod-deploy is successful
-    uses: Informasjonsforvaltning/workflows/.github/workflows/deploy.yaml@main
+    uses: Informasjonsforvaltning/workflows/.github/workflows/kustomize-deploy.yaml@main
     with:
       app_name: ai-project-service
       environment: demo

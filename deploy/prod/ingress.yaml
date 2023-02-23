@@ -1,0 +1,18 @@
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ai-project-service
+spec:
+  ingressClassName: nginx
+  rules:
+    - host: ai-project.prod.fellesdatakatalog.digdir.no
+      http:
+        paths:
+          - backend:
+              service:
+                name: ai-project-service
+                port:
+                  number: 8080
+            path: /
+            pathType: Prefix

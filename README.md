@@ -25,3 +25,15 @@ http://localhost:8080/data
 ```
 
 The response will be a JSON object that contains the parsed data from the CSV file.
+
+## Updating CSV file
+1. Open a browser and navigate to https://github.com/Informasjonsforvaltning/ai-project-service
+1. Click on the file `ai_projects_norwegian_state - Oversatt_v1.csv`
+1. Click on the pencil icon (Edit this file). Keep this tab open.
+1. Open a new window or tab and open the original spreadsheet on Google Docs
+1. Make changes to the spreadsheet
+1. Click on File -> Download -> Comma Seperated Values (.csv)
+1. Open this file with a text editor
+1. Select all content and replace the csv content on github (the previous csv editing tab)
+1. Click on commit changes and write a commit message and click on *Propose changes*
+1. Assign a reviewer and click on *Create pull request*

@@ -18,7 +18,6 @@ purposes.
 Ensure you have the following installed:
 
 - Go
-- Docker
 
 Clone the repository.
 

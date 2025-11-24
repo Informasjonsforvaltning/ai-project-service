@@ -14,7 +14,7 @@ func GetCSVFile() func(c *gin.Context) {
 		data, err := service.ReadCSVData("ai_projects_norwegian_state - Oversatt_v1.csv")
 		if err != nil {
 			c.Status(http.StatusInternalServerError)
-			logrus.Info("Error reading CSV file: %s", err)
+			logrus.Infof("Error reading CSV file: %s", err)
 			return
 		}
 		c.JSON(http.StatusOK, data)

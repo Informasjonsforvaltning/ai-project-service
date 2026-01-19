@@ -4,7 +4,7 @@ go 1.24.3
 
 require (
 	github.com/gin-contrib/cors v1.7.6
-	github.com/sirupsen/logrus v1.9.3
+	github.com/sirupsen/logrus v1.9.4
 )
 
 require (

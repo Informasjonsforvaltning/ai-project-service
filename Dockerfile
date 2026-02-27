@@ -1,4 +1,4 @@
-FROM golang:1.24-alpine AS build-env
+FROM golang:1.26-alpine AS build-env
 
 ENV APP_NAME=ai-project-service
 ENV CMD_PATH=main.go

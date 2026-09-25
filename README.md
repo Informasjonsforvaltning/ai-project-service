@@ -1,3 +1,18 @@
+⚠️ **Archived / Deprecated**
+
+> This repository is no longer maintained.
+> The overview of AI projects in the Norwegian public sector is no longer published on
+> data.norge.no. It has moved to KI Norge:
+>
+> ➡️ https://ki.norge.no/ki-tiltak — overview of AI initiatives
+> 
+> ➡️ https://ki.norge.no/eksempler — examples for inspiration and learning
+>
+> The page https://data.norge.no/kunstig-intelligens has been retired.
+> The overview this application served was last updated in September 2024 and remains
+> available as a static file in this repository:
+> [`ai_projects_norwegian_state - Oversatt_v1.csv`](https://github.com/Informasjonsforvaltning/ai-project-service/blob/main/ai_projects_norwegian_state%20-%20Oversatt_v1.csv).
+
 # AI Project Service
 
 This application provides an API for retrieving AI projects that are supported by the norwegian government. It has a
